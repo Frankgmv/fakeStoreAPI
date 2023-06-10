@@ -1,0 +1,119 @@
+.container-cards {
+    /* border: 2px solid red; */
+    width: 90vw;
+    margin: 10px auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(400px, 600px));
+    grid-auto-rows: 600px;
+    grid-auto-columns: 320px;
+    grid-gap: 20px;
+    padding-bottom: 90px;
+
+}
+
+.card-product {
+    background-color: var(--dark) ;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-product:hover{
+    scale: 1.040;
+    transition: scale .5s, outline .2s;
+    outline: 3px outset var(--dark);
+}
+
+.card-header {
+    background-color: var(--color-primary) ;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    min-height: 50px;
+    padding: 4px;
+}
+
+.title-product {
+    font-size: 1rem;
+    color:var(--dark) ;
+}
+
+.img-container{
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 330px;
+    max-width: 100%;
+    min-height: 350px;
+    max-height: 355px;
+    margin: 0 auto;
+}
+.img-product {
+    min-width: 250px;
+    max-width: 350px;
+    min-height: 250px;
+    max-height: 350px;
+}
+
+.description{
+    font-size: .8rem;
+    color: var(--light);
+    margin: 5px auto;
+    text-align: justify;
+    padding:5px;
+    width: 80%;
+    height: 98px;
+    overflow-y: scroll;
+}
+
+.description::-webkit-scrollbar{
+    display: none;
+}
+
+.description:hover{
+    scale: 1.019;
+    background-color: #000000a8;
+    backdrop-filter: blur(19px);
+    border-radius: 10px;
+    transition: all .7s;
+}
+.description::before{
+    content: "Description: ";
+}
+
+.container-info{
+    display: flex;
+    justify-content: space-around;
+    color: var(--light);
+    margin: 17px 0;
+}
+
+.price , .stock{
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.price:hover , .stock:hover{
+    color: yellow;
+}
+
+.price::before{
+    content: "$ ";
+}
+
+.btn-card{
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    color: var(--light);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.btn-card:hover{
+    scale: 1.080;
+    border:2px outset var(--dark);
+    transition: all .3s;
+}

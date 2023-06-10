@@ -1,0 +1,31 @@
+@import "init.css";
+@import "header.css";
+@import "products.css";
+
+body{
+    background-color: #ff9;
+    
+}
+
+:root{
+    --color-primary: #c26b1e;
+    --color-secondary: rgb(20, 21, 22);
+    
+    --color-action-1: #11120fda;
+    --color-action-2: #fa4306da;
+    
+    --color-card-primary:#de7f7f;
+    --color-card-secondary:#5a2a2a;
+    
+    --dark:#060606;
+    --light:#fff;
+    --blue:#d4e7ee;
+}
+
+.container-users{
+    width: 95vw;
+    margin: 2pc auto;
+}
+
+
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-comparison-table/1.0.0/bootstrap-comparison-table.min.css"); */
